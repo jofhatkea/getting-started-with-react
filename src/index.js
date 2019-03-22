@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Greet from "./components/Greet";
-import { data, siteName } from "./data/data";
+import data from "./data/data";
 
 function App() {
   const greetings = data.map(person => <Greet {...person} />);
