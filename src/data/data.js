@@ -4,14 +4,21 @@ export const data = [
     name: "Jonas",
     email: "jofh@kea.dk",
     kids: 3,
-    skills: true
+    skills: ["drinking beer", "making kids"]
   },
   {
     id: 3,
     name: "Martin",
     email: "mabe@kea.dk",
-    kids: 2,
-    skills: true
+    kids: 1,
+    skills: ["SVG", "carpentry"]
+  },
+  {
+    id: 6,
+    name: "Peter",
+    email: "petl@kea.dk",
+    kids: 0,
+    skills: []
   }
 ];
 export const siteName = "Amzaing";
