@@ -1,12 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+const data = [
+  {
+    name: "Jonas",
+    email: "jofh@kea.dk"
+  },
+  {
+    name: "Martin",
+    email: "mabe@kea.dk"
+  }
+];
+
 function App() {
-  return (
-    <section>
-      <Greet name="Jonas" email="jofh@kea.dk" />
-      <Greet name="Peter" email="petl@kea.dk" />
-    </section>
-  );
+  const greetings = data.map(person => (
+    <Greet name={person.name} email={person.email} />
+  ));
+  return <section>{greetings}</section>;
 }
 function Greet(props) {
   return (
