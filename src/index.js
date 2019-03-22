@@ -1,31 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const Footer = () => {
-  return (
-    <footer>
-      <p>&copy; 2019</p>
-    </footer>
-  );
-};
 function App() {
   return (
     <section>
-      <h1>Hi mom</h1>
-      <Greet />
-      <Greet />
-      <Greet />
-      <Greet />
+      <Greet name="Jonas" email="jofh@kea.dk" />
+      <Greet name="Peter" email="petl@kea.dk" />
     </section>
   );
 }
-function Greet() {
+function Greet(props) {
   return (
-    <div>
-      <h2>Hello you</h2>
-      <Footer />
-    </div>
+    <article>
+      <h1>Hi {props.name}</h1>
+      <Footer whatever={props.email} />
+    </article>
   );
 }
-
+function Footer(props) {
+  return <p>{props.whatever}</p>;
+}
 ReactDOM.render(<App />, document.getElementById("root"));
+//Passing down props
