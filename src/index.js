@@ -4,7 +4,9 @@ import Greet from "./components/Greet";
 import { data, siteName } from "./data/data";
 
 function App() {
-  const greetings = data.map(person => <Greet {...person} />);
+  const greetings = data.map((person, index) => (
+    <Greet key={index} {...person} />
+  ));
   return (
     <section>
       <h1>{siteName}</h1>
