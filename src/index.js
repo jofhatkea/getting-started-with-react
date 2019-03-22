@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Greet from "./components/Greet";
-import data from "./data/data";
+import { data, siteName } from "./data/data";
 
 function App() {
   const greetings = data.map(person => <Greet {...person} />);
-  return <section>{greetings}</section>;
+  return (
+    <section>
+      <h1>{siteName}</h1>
+      {greetings}
+    </section>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

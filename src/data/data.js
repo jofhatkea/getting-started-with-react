@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     name: "Jonas",
     email: "jofh@kea.dk",
@@ -12,6 +12,4 @@ const data = [
     skills: true
   }
 ];
-const siteName = "Amzaing";
-export siteName;
-export data;
+export const siteName = "Amzaing";

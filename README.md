@@ -22,3 +22,4 @@ https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopl
   - map
 - 7.Spread
 - 8.import export
+- 8.1 export, fixed
